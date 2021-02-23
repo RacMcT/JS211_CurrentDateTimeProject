@@ -19,18 +19,24 @@ let time = date.toLocaleTimeString();
 document.getElementById('time').innerHTML = x + ' ' + time;}
 
 
+
 // Write a JavaScript program to convert a number to a string.
 
- numberToString(){
-  var num=213; 
-  toString(num)
-  document.getElementById('number-string').innerHTML = num;
+ const numberToString = () => {
+  var num= document.getElementById("numberForStringConversion").value; 
+  toString(num);
+  console.log(num);
+  console.log(typeof num);
+  document.getElementById("number-string").innerHTML +="<p>This was a number and is now a string thanks to JavaScript magic-  check it out in the console log!</p>"; 
  }
 
 
 // Write a JavaScript program to convert a string to the number.
-
-
+// stringToNumber();{
+//   var text2=456
+//   Number(text2)
+//   console.log(text2)
+// }
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
