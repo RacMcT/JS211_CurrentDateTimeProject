@@ -59,13 +59,26 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+//criteria- must enter name and choose 1 radio button option
+//alert message or prompt if need to choose radio button option
+//alert message or prompt if need to enter name
+//if both criteria are met- return a message with name and message related to the option chosen
 
+//name- enter string value in input- hold in variable "name"
+
+//radio button options- images & messages: which frog are you today?
+// frog1- That's great, hope you stay happy!
+// frog2- Wow, what's on your mind?
+// frog3- Sorry, hope your day gets better!
+
+// returns: name + message
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
 
 
 // Write a JavaScript program that runs when both things are not true.  
+
 
 
 // ***************************
