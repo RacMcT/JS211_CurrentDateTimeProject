@@ -32,7 +32,7 @@ document.getElementById('time').innerHTML = x + ' ' + time;}
 
 // Write a JavaScript program to convert a string to the number.
 const stringToNumber = () => {
-  let str= document.getElementById('number').value;
+  let str= Number(document.getElementById('number').value);
   console.log(str);
   console.log(typeof str);
   document.getElementById("string-number").innerHTML +="<p>This was a string and is now a number thanks to JavaScript magic- check it out in the console log! </p>"
