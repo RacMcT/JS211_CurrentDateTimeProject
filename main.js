@@ -6,16 +6,26 @@
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
 console.log(new Date)
-
 const displayDate = () => {
-  const currentDate = new Date()
+  // document.getElementById("display-element").innerHTML = currentDate; - boiler code to start from ACA
 
-  document.getElementById("display-element").innerHTML = currentDate;
-}
- 
+// get current date (locale machine date time)
+const date = new Date();
+// convert the date to a string
+let x = date.toDateString();
+// convert the time to a string
+let time = date.toLocaleTimeString();
+// set the innerHTML of that element to the date a space the time - allows to display with button onclick
+document.getElementById('time').innerHTML = x + ' ' + time;}
+
 
 // Write a JavaScript program to convert a number to a string.
 
+ numberToString(){
+  var num=213; 
+  toString(num)
+  document.getElementById('number-string').innerHTML = num;
+ }
 
 
 // Write a JavaScript program to convert a string to the number.
@@ -30,7 +40,7 @@ const displayDate = () => {
   // * NaN
   // * String
   
-
+//input data- then run through functions- 
   
 // Write a JavaScript program that adds 2 numbers together.
 
