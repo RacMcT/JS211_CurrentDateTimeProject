@@ -68,14 +68,14 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 //image input options- images & messages: which frog are you today?
 // frog1- That's great, hope you stay happy!
-// frog2- Wow, what's on your mind?
+// frog2- What's on your mind?
 // frog3- Sorry, hope your day gets better!
 
 // returns: name + message
 
 (function () {
   if (window.addEventListener) {
-      window.addEventListener('DOMContentLoaded', dsubmit2CriteriaTrue, false);
+      window.addEventListener('DOMContentLoaded', submit2CriteriaTrue, false);
   } else {
       window.attachEvent('onload', submit2CriteriaTrue);
   }
@@ -89,9 +89,14 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
       alert("Please input your name");
       return false;
     }
-    if (document.getElementById(happyFrog).checked) validateName()= true;
-    return document.getElementById("happy-message").innerHTML += name + "<p> glad you're having a good day!</p>";
-  
+    if (document.getElementById("happyFrog").checked) validateName()= true;{
+      document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
+    } else if (document.getElementById("confusedFrog").checked) validateName()= true;{
+      document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
+    } else if (document.getElementById("sadFrog").checked) validateName()= true;{
+      document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
+    }
+    
     }
 
 
