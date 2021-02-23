@@ -19,11 +19,10 @@ let time = date.toLocaleTimeString();
 document.getElementById('time').innerHTML = x + ' ' + time;}
 
 
-
 // Write a JavaScript program to convert a number to a string.
 
  const numberToString = () => {
-  var num= document.getElementById("numberForStringConversion").value; 
+  let num= document.getElementById("numberForStringConversion").value; 
   toString(num);
   console.log(num);
   console.log(typeof num);
@@ -32,11 +31,12 @@ document.getElementById('time').innerHTML = x + ' ' + time;}
 
 
 // Write a JavaScript program to convert a string to the number.
-// stringToNumber();{
-//   var text2=456
-//   Number(text2)
-//   console.log(text2)
-// }
+const stringToNumber = () => {
+  let str= document.getElementById('number').value;
+  console.log(str);
+  console.log(typeof str);
+  document.getElementById("string-number").innerHTML +="<p>This was a string and is now a number thanks to JavaScript magic- check it out in the console log! </p>"
+}
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -45,6 +45,15 @@ document.getElementById('time').innerHTML = x + ' ' + time;}
   // * Number
   // * NaN
   // * String
+  
+ const dataTypeIdentify = () => {
+ let dataTypes = document.getElementById('dataTypes').value;
+console.log(dataTypes);
+console.log(typeof dataTypes);
+document.getElementById("data-type-display").innerHTML += "<p>This is the data type you just input - check it out in the console log! </p>"
+ }
+
+
   
 //input data- then run through functions- 
   
