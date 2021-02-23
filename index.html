@@ -56,23 +56,25 @@
   <input type="text" id="name">
   <section class="image-container">
 <label>
-  <input type="radio" name="frog" value="happy" checked>
+  <input type="radio" name="frog" value="happy" id="happyFrog">
   <img src="images/frog1.png">
 </label>
 
 <label>
-  <input type="radio" name="frog" value="confused">
+  <input type="radio" name="frog" value="confused" id="confusedFrog">
   <img src="images/frog2.png">
 </label>
 
 <label>
-  <input type="radio" name="frog" value="sad">
+  <input type="radio" name="frog" value="sad" id="sadFrog">
   <img src="images/frog3.png">
 </label>
 
   </section>
   <button onclick="submit2CriteriaTrue()">Submit Answers</button>
-  <div id="two-criteria-true"></div>
+  <div id="happy-message"></div>
+  <div id="confused-message"></div>
+  <div id="sad-message"></div>
 
 </section>
     

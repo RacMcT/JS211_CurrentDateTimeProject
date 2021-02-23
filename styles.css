@@ -1,4 +1,16 @@
 /*General Styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  background-image: url(images/color-bg.png);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0 white;
+}
 
 button {
   cursor: pointer;

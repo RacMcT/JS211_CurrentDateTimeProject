@@ -73,9 +73,31 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // returns: name + message
 
-const submit2CriteriaTrue = () =>{
+(function () {
+  if (window.addEventListener) {
+      window.addEventListener('DOMContentLoaded', dsubmit2CriteriaTrue, false);
+  } else {
+      window.attachEvent('onload', submit2CriteriaTrue);
+  }
+} ());
 
-}
+  const submit2CriteriaTrue = () =>{
+    let name = document.getElementById('name').value;
+  
+    function validateName(){
+      if (name == "" );
+      alert("Please input your name");
+      return false;
+    }
+    if (document.getElementById(happyFrog).checked) validateName()= true;
+    return document.getElementById("happy-message").innerHTML += name + "<p> glad you're having a good day!</p>";
+  
+    }
+
+
+
+
+
 
 
 
