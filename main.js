@@ -45,15 +45,13 @@ const stringToNumber = () => {
   // * Number
   // * NaN
   // * String
-  
+
  const dataTypeIdentify = () => {
  let dataTypes = document.getElementById('dataTypes').value;
 console.log(dataTypes);
 console.log(typeof dataTypes);
 document.getElementById("data-type-display").innerHTML += "<p>This is the data type you just input - check it out in the console log! </p>"
  }
-
-
   
 //input data- then run through functions- 
   
@@ -83,7 +81,8 @@ document.getElementById("data-type-display").innerHTML += "<p>This is the data t
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
-
+//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN GO THROUGH AND STYLE IT PRETTY?
+//DOING IT AS I GO HELPS ME TO MAKE SURE IT ALL CONNECTS, FUNCTION BY FUNCTION BEFORE MOVING ONTO THE NEXT SECTION
 
 
 // Additional Resources
