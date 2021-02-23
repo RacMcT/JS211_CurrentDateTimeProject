@@ -66,12 +66,20 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 //name- enter string value in input- hold in variable "name"
 
-//radio button options- images & messages: which frog are you today?
+//image input options- images & messages: which frog are you today?
 // frog1- That's great, hope you stay happy!
 // frog2- Wow, what's on your mind?
 // frog3- Sorry, hope your day gets better!
 
 // returns: name + message
+
+const submit2CriteriaTrue = () =>{
+
+}
+
+
+
+
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
