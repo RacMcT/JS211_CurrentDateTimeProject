@@ -57,7 +57,6 @@ const sumNumbers = () => {
 document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 }
 
-
 // Write a JavaScript program that runs only when 2 things are true.
 
 
@@ -67,6 +66,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 
 // Write a JavaScript program that runs when both things are not true.  
+
 
 // ***************************
 //         PART TWO
@@ -80,5 +80,5 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
-//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN GO THROUGH AND STYLE IT PRETTY?
+//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN AFTER IT IS TOTALLY FUNCTIONAL AND DISPLAYS FOR THE USER TO GO THROUGH AND STYLE IT PRETTY?
 //DOING IT AS I GO HELPS ME TO MAKE SURE IT ALL CONNECTS, FUNCTION BY FUNCTION BEFORE MOVING ONTO THE NEXT SECTION
