@@ -16,6 +16,10 @@ button {
   cursor: pointer;
 }
 
+img{
+  width: 10%;
+}
+
 /* Hide Radio behind image- allows for accessability (tab keyboard function and focus) */
 [type="radio"] {
   position: absolute;
@@ -24,7 +28,7 @@ button {
   height: 0;
 }
 
-/* Frog/Radio */
+/* Image/Radio */
 [type="radio"] + img {
   cursor: pointer;
 }

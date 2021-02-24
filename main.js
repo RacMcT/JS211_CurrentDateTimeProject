@@ -73,46 +73,57 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // returns: name + message
 
-(function () {
-  if (window.addEventListener) {
-      window.addEventListener('DOMContentLoaded', submit2CriteriaTrue, false);
-  } else {
-      window.attachEvent('onload', submit2CriteriaTrue);
-  }
-} ());
+// (function () {
+//   if (window.addEventListener) {
+//       window.addEventListener('DOMContentLoaded', submit2CriteriaTrue, false);
+//   } else {
+//       window.attachEvent('onload', submit2CriteriaTrue);
+//   }
+// } ());
 
-  const submit2CriteriaTrue = () =>{
-    let name = document.getElementById('name').value;
+//   const submit2CriteriaTrue = () =>{
+//     let name = document.getElementById('name').value;
+//     let selected = document.forms.frogForm.value;
   
-    function validateName(){
-      if (name == "" );
-      alert("Please input your name");
-      return false;
-    }
-    if (document.getElementById("happyFrog").checked) validateName()= true;{
-      document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
-    } else if (document.getElementById("confusedFrog").checked) validateName()= true;{
-      document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
-    } else if (document.getElementById("sadFrog").checked) validateName()= true;{
-      document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
-    }
+//     function validateName(){
+//       if (name == "null" );
+//       alert("Please input your name");
+//       return (false)
+//     }
+
+//     console.log(selected);
+// //bug: Message is getting put into the html even if only one condition is met
+//     if ((selected = "happy") && validateName() == true);{
+//       return document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
+//     } else if ((selected = "confused") && validateName() == true);{
+//       return document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
+//     } else if ((selected = "sad") && validateName() == true);{
+//       return document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
+//     }
+    //else alert ("please enter name and select frog");
+    // Should the else if be switch statments instead?
+    //}
+  
+
+// Write a JavaScript program that runs when 1 of 2 things are true.-- section 4
+
+// if the user selects an option then it prints out a message
+//if user selects no option nothing happens
+
+let chores = document.forms.chores.checked;
+
+const choreStatus = () => {
+  if (chores.checked == true) {
+    document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
     
-    }
+  } else {
+    document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+    
+  }
+}
 
 
-
-
-
-
-
-
-
-
-// Write a JavaScript program that runs when 1 of 2 things are true.
-
-
-
-// Write a JavaScript program that runs when both things are not true.  
+// Write a JavaScript program that runs when both things are not true.  -- section 5
 
 
 
@@ -128,5 +139,4 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
-//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN AFTER IT IS TOTALLY FUNCTIONAL AND DISPLAYS FOR THE USER TO GO THROUGH AND STYLE IT PRETTY?
-//DOING IT AS I GO HELPS ME TO MAKE SURE IT ALL CONNECTS, FUNCTION BY FUNCTION BEFORE MOVING ONTO THE NEXT SECTION
+//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN AFTER IT IS TOTALLY FUNCTIONAL AND DISPLAYS FOR THE USER TO GO THROUGH AND STYLE IT PRETTY

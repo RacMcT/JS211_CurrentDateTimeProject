@@ -54,25 +54,50 @@
   <h2>What's your name and what frog do you feel like today?</h2>
   <label for="text">Name</label>
   <input type="text" id="name">
+
+ <form name="frogForm">
   <section class="image-container">
-<label>
-  <input type="radio" name="frog" value="happy" id="happyFrog">
-  <img src="images/frog1.png">
-</label>
+    <label>
+      <input type="radio" name="frog" value="happy" id="happyFrog">
+      <img src="images/frog1.png" alt="happy frog cartoon">
+    </label>
 
-<label>
-  <input type="radio" name="frog" value="confused" id="confusedFrog">
-  <img src="images/frog2.png">
-</label>
-
-<label>
-  <input type="radio" name="frog" value="sad" id="sadFrog">
-  <img src="images/frog3.png">
-</label>
-
-  </section>
+    <label>
+      <input type="radio" name="frog" value="confused" id="confusedFrog">
+      <img src="images/frog2.png" alt="confused frog cartoon">
+    </label>
+    
+    <label>
+      <input type="radio" name="frog" value="sad" id="sadFrog">
+      <img src="images/frog3.png" alt="sad frog cartoon">
+    </label>
+    
+      </section>
+ </form>
+  
   <button onclick="submit2CriteriaTrue()">Submit Answers</button>
   <div id="frog-message"></div>
+
+</section>
+
+<section>
+<h2>Children's Chores</h2>
+<form name="chores">
+  <label>
+    <input type="radio" name="chore" value="true" id="yes">
+    <img src="images/smiley-147407_640.png" alt="smily cartoon with thumbs up">
+  </label>
+  
+  <label>
+    <input type="radio" name="chore" value="false" id="no">
+    <img src="images/disapprove-149251_640.png" alt="smily cartoon with thumbs down">
+  </label>
+</form>
+
+<button onclick="choreStatus()">Submit Chore Status</button>
+
+<h3>Child's Allowance</h3>
+  <div id="child-allowance"></div>
 
 </section>
     
