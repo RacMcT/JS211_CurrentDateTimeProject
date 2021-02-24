@@ -193,31 +193,48 @@ if (document.getElementById("no").checked){
 //When user chooses favorite treats- message text appears: "Great Choices Friend!" 
 
 
-//  let treats = document.getElementsByName('ice-cream');
-//  const treatChoiceClick = () => {
-//   let choc = document.getElementById("chocolate").checked;
-//   let van = document.getElementById("vanilla").checked;
-//   let straw = document.getElementById("strawberry").checked;
+//****BUG: ALERT MESSAGE SHOWS UP NO MATTER WHAT *****
 
-//   if ((choc == "") && (van == ""))
-//   {alert("please select 2 treat flavors");
-//   return false;
-//  } else if ((choc == "")) && (straw == ""));
-//  {alert("please select 2 treat flavors");
-//   return false;
-// } else if ((straw == "")) && (van == "");
-// {alert ("please select 2 treat flavors");
-// return false;
-// } else {
-//   document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
-//   return true;
-// }
-//  }
+ function treatChoiceClick () {
+  let form_data = new
+  FormData(document.getElementById("treatsForm"));
+  if(!form_data.getAll("treat")<2){
+    alert ("please select 2 treat flavors")
+ }else {
+  document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
+ }
+}
 
 
 
 
+//*****FIRST CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
+ // const treatChoiceClick = () => {
 
+  //   if (document.getElementById("chocolate").checked){
+  //    choc = "choc"
+  //  }
+  //  if (document.getElementById("vanilla").checked){
+  //    van = "van"
+  //  }
+  //  if(document.getElementById("strawberry").checked){
+  //    straw="straw"
+  //  }
+   
+  //   if ((choc == "") && (van == ""))
+  //   {alert("please select 2 treat flavors")
+  
+  //  } else if ((choc == "") && (straw == ""))
+  //  {alert("please select 2 treat flavors")
+  
+  // } else if ((straw == "") && (van == ""))
+  // {alert ("please select 2 treat flavors")
+  
+  // } else {
+  //   document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!"
+  // }
+  //  }
+  
 // ***************************
 //         PART TWO
 // ***************************
