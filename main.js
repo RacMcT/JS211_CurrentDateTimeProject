@@ -60,6 +60,8 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+//LOGIC NOTES FOR MYSELF:
+
 //criteria- must enter name and choose 1 radio button option
 //alert message or prompt if need to choose radio button option
 //alert message or prompt if need to enter name
@@ -77,6 +79,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //**************************/
 
 // THIS FUNCTION CORRECTED ISSUES WHEN WAS TRYING TO RUN BEFORE DOM HAD CHANCE TO FINISH LOADING:
+// LOAD ERROR NOT HAPPENING ANYMORE- KEEP CODE IN COMMENTS IN CASE NEED AGAIN?! 
 // (function () {
 //   if (window.addEventListener) {
 //       window.addEventListener('DOMContentLoaded', submit2CriteriaTrue, false);
@@ -85,7 +88,9 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //   }
 // } ());
 
-//******* CODE FOR FROG CHOICES: COMMENT OUT TO START TO WORK ON OTHER SECTIONS *************/
+//******* CODE FOR FROG CHOICES: *************/
+
+//Function validates that the user entered a name and puts alert if not met
 function validateName(name){
   if (name == "" )
     alert("Please input your name");
@@ -93,10 +98,13 @@ function validateName(name){
      console.log(name);
 }
 
+//Function takes input data from frog radio buttons and username; depending on selections a different message shows in HTML for user
   const submit2CriteriaTrueClick = () =>{
     let name = document.getElementById('name').value;
     let selected = document.getElementById('frogForm');
     let emotion = "";
+
+//if statements get data from radio buttons- puts the checked into variable to be called later
 
     if (document.getElementById('happyFrog').checked){
       emotion = "happy"
@@ -108,27 +116,23 @@ function validateName(name){
       emotion = "sad"
     }
 
-      //console.log(emotion);
-  
-    // function validateName(){
-    //   if (name == "" )
-    //     alert("Please input your name");
-    //   else {return true}
-    //      console.log(name);
-    // }
-  
-    console.log(selected);
+// checks to make sure array from form is able to be input/used if needed
+console.log(selected); 
 
-    if (emotion = "happy" && validateName(name) == true){
+//if else statments- runs permutations for different combos and connects username, frog emotion and outputs message for user in HTML container
+//error- only gives happy message, does not give other messages?
+
+    if (emotion == "happy" && validateName(name) == true){
        document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
-    } else if (emotion = "confused" && validateName(name) == true){
+    } else if (emotion == "confused" && validateName(name) == true){
        document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
-    } else if (emotion = "sad" && validateName(name) == true){
+    } else if (emotion == "sad" && validateName(name) == true){
        document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
     } else {alert ("please enter name and select froggy emotion");
 
     }
    }
+
   // Should the else if be switch statments instead?-- NO BECAUSE NEED 2 CONDITIONS TO BE TRUE??
 
 
@@ -138,8 +142,36 @@ function validateName(name){
 // Write a JavaScript program that runs when 1 of 2 things are true.-- section 4
 
 // if the user selects an option then it prints out a message
-//if user selects no option nothing happens
+// if user selects no option nothing happens
 
+const choreStatusClick = () => {
+
+ if (document.getElementById("yes").checked){
+  choreAnswer = "yes"
+}
+if (document.getElementById("no").checked){
+  choreAnswer = "no"
+}
+
+  if (choreAnswer == "yes"){
+    document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00 </p>";
+  } else if (choreAnswer == "no"){
+    document.getElementById("child-allowance").innerHTML += "<p>Please finish up! </p>";
+  }
+}
+
+//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
+// const choreStatusClick = () => {
+//   if (chores.checked == true) {
+//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
+    
+//   } else {
+//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+    
+//   }
+// }
+
+//**********************SECOND ATTEMPT- TRIED TO LOOP THROUGH -- KINDA WORKED **************
 // let chores = document.getElementsByName('chore');
 // const choreStatusClick = () => {
 // for (var i = 0, length = chores.length; i < length; i++){
@@ -152,17 +184,6 @@ function validateName(name){
 
 //   }
 //  }
-
-//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
-// const choreStatusClick = () => {
-//   if (chores.checked == true) {
-//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
-    
-//   } else {
-//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
-    
-//   }
-// }
 
 //*************** NEXT SECTION: 2 THING ARE FALSE- RESPONSE SHOWS-- ALERT MESSAGE? *******************/
 
