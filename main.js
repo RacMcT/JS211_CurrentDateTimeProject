@@ -86,30 +86,49 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 // } ());
 
 //******* CODE FOR FROG CHOICES: COMMENT OUT TO START TO WORK ON OTHER SECTIONS *************/
+function validateName(name){
+  if (name == "" )
+    alert("Please input your name");
+  else {return true}
+     console.log(name);
+}
 
   const submit2CriteriaTrueClick = () =>{
     let name = document.getElementById('name').value;
-    let selected = document.getElementsByClassName('frog').value;
-  console.log(selected);
-  }
-//     function validateName(){
-//       if (name == "" )
-//         alert("Please input your name");
-//       else {return true}
-//     }
-      
-//     console.log(selected);
-// //bug: Message is getting put into the html even if only one condition is met
-//     if (selected = "happy" && validateName() == true);{
-//        document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
-//     } else if (selected = "confused" && validateName() == true);{
-//        document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
-//     } else if (selected = "sad" && validateName() == true);{
-//        document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
-//     } else {alert ("please enter name and select froggy emotion");
+    let selected = document.getElementById('frogForm');
+    let emotion = "";
 
-//     }
-//    }
+    if (document.getElementById('happyFrog').checked){
+      emotion = "happy"
+    }
+    if (document.getElementById('confusedFrog').checked){
+      emotion = "confused"
+    }
+    if (document.getElementById('sadFrog').checked){
+      emotion = "sad"
+    }
+
+      //console.log(emotion);
+  
+    // function validateName(){
+    //   if (name == "" )
+    //     alert("Please input your name");
+    //   else {return true}
+    //      console.log(name);
+    // }
+  
+    console.log(selected);
+
+    if (emotion = "happy" && validateName(name) == true){
+       document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
+    } else if (emotion = "confused" && validateName(name) == true){
+       document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
+    } else if (emotion = "sad" && validateName(name) == true){
+       document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
+    } else {alert ("please enter name and select froggy emotion");
+
+    }
+   }
   // Should the else if be switch statments instead?-- NO BECAUSE NEED 2 CONDITIONS TO BE TRUE??
 
 
@@ -132,7 +151,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //   //break; - when it is incorporated then it just does first response... when not there it gives both... ?
 
 //   }
-// }
+//  }
 
 //************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
 // const choreStatusClick = () => {
