@@ -80,7 +80,7 @@
 
 </section>
 
-<section>
+<section class="section 4">
 <h2>Children's Chores</h2>
 <form name="chores">
   <label>
@@ -98,10 +98,38 @@
 
 <h3>Child's Allowance</h3>
   <div id="child-allowance"></div>
-
 </section>
     
-    </main>
+
+<section class="section 5">
+<h2>Check Off Your Two Favorite Treats!</h2>
+<form>
+
+<input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+<label for="chocolate">
+  <img src="images/choc-cone.png" alt="chocolate ice cream cone">
+</label>
+<br>
+
+<input type="checkbox" id="vanilla" name="vanilla" value="vanilla">
+<label for="vanilla">
+  <img src="images/van-cone.png" alt="vanilla ice cream cone">
+</label>
+<br>
+
+<input type="checkbox" id="strawberry" name="strawberry" value="strawberry">
+<label for="strawberry">
+  <img src="images/straw-cone.png" alt="strawberry ice cream cone">
+</label>
+<br>
+
+</form>
+<button onclick="treatChoiceClick()">Submit Treat Choices</button>
+  <div id="treat-response"></div>
+</sectin>
+  
+
+</main>
     
 
   </body>

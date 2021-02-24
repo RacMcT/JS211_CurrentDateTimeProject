@@ -3,7 +3,7 @@
 console.log(new Date)
 const displayDateClick = () => {
 
-// get current date (locale machine date time)
+// get current date (local machine date time)
 const date = new Date();
 // convert the date to a string
 let x = date.toDateString();
@@ -58,9 +58,6 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 }
 
 
-
-
-
 // Write a JavaScript program that runs only when 2 things are true.
 
 //criteria- must enter name and choose 1 radio button option
@@ -88,7 +85,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //   }
 // } ());
 
-//******* CODE FOR FROG CHOICES: COMMENTED OUT TO START TO WORK ON OTHER SECTIONS *************/
+//******* CODE FOR FROG CHOICES: COMMENT OUT TO START TO WORK ON OTHER SECTIONS *************/
 
 //   const submit2CriteriaTrueClick = () =>{
 //     let name = document.getElementById('name').value;
@@ -133,7 +130,7 @@ for (var i = 0, length = chores.length; i < length; i++){
   }
 }
 
-//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES ********
+//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
 // const choreStatusClick = () => {
 //   if (chores.checked == true) {
 //     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
@@ -147,6 +144,31 @@ for (var i = 0, length = chores.length; i < length; i++){
 //*************** NEXT SECTION: 2 THING ARE FALSE- RESPONSE SHOWS-- ALERT MESSAGE? *******************/
 
 // Write a JavaScript program that runs when both things are not true.  -- section 5
+
+//When user does NOT choose 2 favorite treats and clicks submit button- alert pops up?
+//When user chooses favorite treats- message text appears: "Great Choices Friend!" 
+
+
+ let treats = document.getElementsByName('ice-cream');
+ const treatChoiceClick = () => {
+  let choc = document.getElementById("chocolate").checked;
+  let van = document.getElementById("vanilla").checked;
+  let straw = document.getElementById("strawberry").checked;
+
+  if ((choc == "") && (van == ""))
+  {alert("please select 2 treat flavors");
+  return false;
+ } else if ((choc == "")) && (straw == ""));
+ {alert("please select 2 treat flavors");
+  return false;
+} else if ((straw == "")) && (van == "");
+{alert ("please select 2 treat flavors");
+return false;
+} else {
+  document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
+  return true;
+}
+ }
 
 
 
