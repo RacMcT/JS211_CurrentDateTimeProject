@@ -5,7 +5,7 @@
 1. Accessability- added labels and tags for all inputs
 1. Accessabilty- TO DO: WHEN STYLING- COLOR CONTRAST, FONT SIZE, FOCUS ON INPUT
 1. Console log- TO DO: STYLE CONSOLE LOG- WEBDEV TUTORIAL- MAKE EASIER TO READ?- accessability?
-1. Accessability- TO DO: REPLACE DIV'S WITH SYMANTIC ELEMENTS IN HTML
+1. Accessability- TO DO: REPLACE DIV'S WITH SYMANTIC ELEMENTS IN HTML- done 2/24
 
 # JS211_CurrentDateTimeProject[![CircleCI](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages.svg?style=svg)](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages)
 

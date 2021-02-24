@@ -92,23 +92,25 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //     let selected = document.forms.frogForm.value;
   
 //     function validateName(){
-//       if (name == "null" );
-//       alert("Please input your name");
-//       return (false)
+//       if (name == "" )
+//         alert("Please input your name");
+//       else {return true}
 //     }
+      
 //     console.log(selected);
 // //bug: Message is getting put into the html even if only one condition is met
-//     if ((selected = "happy") && validateName() == true);{
-//       return document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
-//     } else if ((selected = "confused") && validateName() == true);{
-//       return document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
-//     } else if ((selected = "sad") && validateName() == true);{
-//       return document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
+//     if ((selected = "happy") && (validateName() == true));{
+//        document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
+//     } else if ((selected = "confused") && (validateName() == true));{
+//        document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
+//     } else if ((selected = "sad") && (validateName() == true));{
+//        document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
 //     }
-//     else alert ("please enter name and select frog");
-//     // Should the else if be switch statments instead?
-//   }
-
+//     else {alert ("please enter name and select frog");
+//     // Should the else if be switch statments instead?-- NO BECAUSE NEED 2 CONDITIONS TO BE TRUE?
+//     }
+// } //  ERROR FOR THIS BRACKET, BUT IT CLOSES THE OVERARCHING FUNCTION??? 
+  
 //*************** NEXT SECTION: 1 THING IS TRUE- RESPONSE SHOWS *******************/
 
 
@@ -117,18 +119,18 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 // if the user selects an option then it prints out a message
 //if user selects no option nothing happens
 
-let chores = document.getElementsByName('chore');
-const choreStatusClick = () => {
-for (var i = 0, length = chores.length; i < length; i++){
-  if (chores[i].value =="yes"){
-    document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
-  }else if (chores[i].value =="no"){
-    document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
-  } 
-  //break; - when it is incorporated then it just does first response... when not there it gives both... ?
+// let chores = document.getElementsByName('chore');
+// const choreStatusClick = () => {
+// for (var i = 0, length = chores.length; i < length; i++){
+//   if (chores[i].value =="yes"){
+//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
+//   }else if (chores[i].value =="no"){
+//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+//   } 
+//   //break; - when it is incorporated then it just does first response... when not there it gives both... ?
 
-  }
-}
+//   }
+// }
 
 //************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
 // const choreStatusClick = () => {
