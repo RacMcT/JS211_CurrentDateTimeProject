@@ -149,26 +149,26 @@ for (var i = 0, length = chores.length; i < length; i++){
 //When user chooses favorite treats- message text appears: "Great Choices Friend!" 
 
 
- let treats = document.getElementsByName('ice-cream');
- const treatChoiceClick = () => {
-  let choc = document.getElementById("chocolate").checked;
-  let van = document.getElementById("vanilla").checked;
-  let straw = document.getElementById("strawberry").checked;
+//  let treats = document.getElementsByName('ice-cream');
+//  const treatChoiceClick = () => {
+//   let choc = document.getElementById("chocolate").checked;
+//   let van = document.getElementById("vanilla").checked;
+//   let straw = document.getElementById("strawberry").checked;
 
-  if ((choc == "") && (van == ""))
-  {alert("please select 2 treat flavors");
-  return false;
- } else if ((choc == "")) && (straw == ""));
- {alert("please select 2 treat flavors");
-  return false;
-} else if ((straw == "")) && (van == "");
-{alert ("please select 2 treat flavors");
-return false;
-} else {
-  document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
-  return true;
-}
- }
+//   if ((choc == "") && (van == ""))
+//   {alert("please select 2 treat flavors");
+//   return false;
+//  } else if ((choc == "")) && (straw == ""));
+//  {alert("please select 2 treat flavors");
+//   return false;
+// } else if ((straw == "")) && (van == "");
+// {alert ("please select 2 treat flavors");
+// return false;
+// } else {
+//   document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
+//   return true;
+// }
+//  }
 
 
 

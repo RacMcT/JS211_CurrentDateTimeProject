@@ -3,10 +3,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1%;
+}
+
+header {
+  background-image: url(images/color-bg.png);
+  background-size: cover;
+  padding: 1%;
 }
 
 h1 {
-  background-image: url(images/color-bg.png);
   text-align: center;
   color: rgb(0, 0, 0);
   text-shadow: 1px 0 white;
@@ -16,8 +22,13 @@ button {
   cursor: pointer;
 }
 
-img {
-  width: 10%;
+.section3 img,
+.section5 img {
+  width: 15%;
+}
+
+.section4 img {
+  width: 8%;
 }
 
 /* Hide Radio behind image- allows for accessability (tab keyboard function and focus) */
@@ -35,5 +46,16 @@ img {
 
 /* Image/Radio Checked */
 [type="radio"]:checked + img {
+  outline: 2px solid #f00;
+}
+
+/*Image/Checkbox */
+[type="checkbox"] {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+/* Image/Checkbox Checked */
+[type="checkbox"]:checked + label {
   outline: 2px solid #f00;
 }
