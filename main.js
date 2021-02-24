@@ -87,10 +87,11 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 //******* CODE FOR FROG CHOICES: COMMENT OUT TO START TO WORK ON OTHER SECTIONS *************/
 
-//   const submit2CriteriaTrueClick = () =>{
-//     let name = document.getElementById('name').value;
-//     let selected = document.forms.frogForm.value;
-  
+  const submit2CriteriaTrueClick = () =>{
+    let name = document.getElementById('name').value;
+    let selected = document.getElementsByClassName('frog').value;
+  console.log(selected);
+  }
 //     function validateName(){
 //       if (name == "" )
 //         alert("Please input your name");
@@ -99,18 +100,19 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
       
 //     console.log(selected);
 // //bug: Message is getting put into the html even if only one condition is met
-//     if ((selected = "happy") && (validateName() == true));{
+//     if (selected = "happy" && validateName() == true);{
 //        document.getElementById("frog-message").innerHTML += name + "<p> that's great, hope you stay happy!</p>";
-//     } else if ((selected = "confused") && (validateName() == true));{
+//     } else if (selected = "confused" && validateName() == true);{
 //        document.getElementById("frog-message").innerHTML += name + "<p>, what's on your mind?</p>";
-//     } else if ((selected = "sad") && (validateName() == true));{
+//     } else if (selected = "sad" && validateName() == true);{
 //        document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
+//     } else {alert ("please enter name and select froggy emotion");
+
 //     }
-//     else {alert ("please enter name and select frog");
-//     // Should the else if be switch statments instead?-- NO BECAUSE NEED 2 CONDITIONS TO BE TRUE?
-//     }
-// } //  ERROR FOR THIS BRACKET, BUT IT CLOSES THE OVERARCHING FUNCTION??? 
-  
+//    }
+  // Should the else if be switch statments instead?-- NO BECAUSE NEED 2 CONDITIONS TO BE TRUE??
+
+
 //*************** NEXT SECTION: 1 THING IS TRUE- RESPONSE SHOWS *******************/
 
 
