@@ -1,7 +1,7 @@
 
 // Displays the current day and time:
 console.log(new Date)
-const displayDate = () => {
+const displayDateClick = () => {
 
 // get current date (locale machine date time)
 const date = new Date();
@@ -14,7 +14,7 @@ document.getElementById('time').innerHTML = x + ' ' + time;}
 
 
 // Converts a number to a string:
- const numberToString = () => {
+ const numberToStringClick = () => {
   let num= document.getElementById("numberForStringConversion").value; 
   toString(num);
   console.log(num);
@@ -23,7 +23,7 @@ document.getElementById('time').innerHTML = x + ' ' + time;}
  }
 
 // Converts a string to the number:
-const stringToNumber = () => {
+const stringToNumberClick = () => {
   let str= Number(document.getElementById('number').value);
   console.log(str);
   console.log(typeof str);
@@ -33,7 +33,7 @@ const stringToNumber = () => {
 // JavaScript program that takes in different datatypes and prints thier type:
 // HOW DO I TEST FOR SOMETHING OTHER THAN A STRING? INPUT DEFAULT TYPE IS TEXT- EVEN IF NOT DECLARED? 
 
- const dataTypeIdentify = () => {
+ const dataTypeIdentifyClick = () => {
  let dataTypes = document.getElementById('dataTypes').value;
 console.log(dataTypes);
 console.log(typeof dataTypes);
@@ -48,7 +48,7 @@ document.getElementById("data-type-display").innerHTML += "<p>This is the data t
   
 // Write a JavaScript program that adds 2 numbers together.
 
-const sumNumbers = () => {
+const sumNumbersClick = () => {
   let num1 = Number(document.getElementById('num1').value);
   let num2 = Number(document.getElementById('num2').value);
    console.log(num1 , num2);
@@ -56,6 +56,10 @@ const sumNumbers = () => {
   let x= (num1 + num2);
 document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 }
+
+
+
+
 
 // Write a JavaScript program that runs only when 2 things are true.
 
@@ -73,6 +77,9 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // returns: name + message
 
+//**************************/
+
+// THIS FUNCTION CORRECTED ISSUES WHEN WAS TRYING TO RUN BEFORE DOM HAD CHANCE TO FINISH LOADING:
 // (function () {
 //   if (window.addEventListener) {
 //       window.addEventListener('DOMContentLoaded', submit2CriteriaTrue, false);
@@ -81,7 +88,9 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //   }
 // } ());
 
-//   const submit2CriteriaTrue = () =>{
+//******* CODE FOR FROG CHOICES: COMMENTED OUT TO START TO WORK ON OTHER SECTIONS *************/
+
+//   const submit2CriteriaTrueClick = () =>{
 //     let name = document.getElementById('name').value;
 //     let selected = document.forms.frogForm.value;
   
@@ -90,7 +99,6 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //       alert("Please input your name");
 //       return (false)
 //     }
-
 //     console.log(selected);
 // //bug: Message is getting put into the html even if only one condition is met
 //     if ((selected = "happy") && validateName() == true);{
@@ -100,30 +108,47 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //     } else if ((selected = "sad") && validateName() == true);{
 //       return document.getElementById("frog-message").innerHTML += "<p>Sorry </p>" + name + "<p>, I hope you're day gets better! </p>";
 //     }
-    //else alert ("please enter name and select frog");
-    // Should the else if be switch statments instead?
-    //}
-  
+//     else alert ("please enter name and select frog");
+//     // Should the else if be switch statments instead?
+//   }
+
+//*************** NEXT SECTION: 1 THING IS TRUE- RESPONSE SHOWS *******************/
+
 
 // Write a JavaScript program that runs when 1 of 2 things are true.-- section 4
 
 // if the user selects an option then it prints out a message
 //if user selects no option nothing happens
 
-let chores = document.forms.chores.checked;
-
-const choreStatus = () => {
-  if (chores.checked == true) {
+let chores = document.getElementsByName('chore');
+const choreStatusClick = () => {
+for (var i = 0, length = chores.length; i < length; i++){
+  if (chores[i].value =="yes"){
     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
-    
-  } else {
+  }else if (chores[i].value =="no"){
     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
-    
+  } 
+  //break; - when it is incorporated then it just does first response... when not there it gives both... ?
+
   }
 }
 
+//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES ********
+// const choreStatusClick = () => {
+//   if (chores.checked == true) {
+//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
+    
+//   } else {
+//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+    
+//   }
+// }
+
+//*************** NEXT SECTION: 2 THING ARE FALSE- RESPONSE SHOWS-- ALERT MESSAGE? *******************/
 
 // Write a JavaScript program that runs when both things are not true.  -- section 5
+
+
 
 
 
