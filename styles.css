@@ -22,13 +22,14 @@ button {
   cursor: pointer;
 }
 
-.section3 img,
-.section5 img {
+.frogs img,
+.treats img {
   width: 15%;
 }
 
-.section4 img {
+.chores img {
   width: 8%;
+  justify-content: center;
 }
 
 /* Hide Radio behind image- allows for accessability (tab keyboard function and focus) */
