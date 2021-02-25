@@ -12,7 +12,6 @@ let time = date.toLocaleTimeString();
 // set the innerHTML of that element to the date a space the time - allows to display with button onclick
 document.getElementById('time').innerHTML = x + ' ' + time;}
 
-
 // Converts a number to a string:
  const numberToStringClick = () => {
   let num= document.getElementById("numberForStringConversion").value; 
@@ -44,7 +43,7 @@ document.getElementById("data-type-display").innerHTML += "<p>This is the data t
 //START THIS SECTION TUESDAY - FEB 22ND 
 //*********************************/
 
-//input data- then run through functions- 
+//input data- then run through functions 
   
 // Write a JavaScript program that adds 2 numbers together.
 
@@ -57,7 +56,7 @@ const sumNumbersClick = () => {
 document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 }
 
-
+//****************************************************************/
 // Write a JavaScript program that runs only when 2 things are true.
 
 //LOGIC NOTES FOR MYSELF:
@@ -76,7 +75,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 
 // returns: name + message
 
-//**************************/
+//****************************************************************/
 
 // THIS FUNCTION CORRECTED ISSUES WHEN WAS TRYING TO RUN BEFORE DOM HAD CHANCE TO FINISH LOADING:
 // LOAD ERROR NOT HAPPENING ANYMORE- KEEP CODE IN COMMENTS IN CASE NEED AGAIN?! 
@@ -88,7 +87,7 @@ document.getElementById("sum-numbers").innerHTML += "<p>Sum: </p>" + x;
 //   }
 // } ());
 
-//******* CODE FOR FROG CHOICES: *************/
+//******* CODE FOR FROG CHOICES- 3 RADIO BUTTONS AND USERNAME: *************/
 
 //Function validates that the user entered a name and puts alert if not met
 function validateName(name){
@@ -144,6 +143,8 @@ console.log(selected);
 // if the user selects an option then it prints out a message
 // if user selects no option nothing happens
 
+//****************CODE FOR CHORES STATUS- 2 RADIO BUTTONS:******************************/
+
 const choreStatusClick = () => {
 
  if (document.getElementById("yes").checked){
@@ -171,7 +172,7 @@ if (document.getElementById("no").checked){
 //   }
 // }
 
-//**********************SECOND ATTEMPT- TRIED TO LOOP THROUGH -- KINDA WORKED **************
+//**********************SECOND ATTEMPT- TRIED TO USE FOR LOOP -- KINDA WORKED **************
 // let chores = document.getElementsByName('chore');
 // const choreStatusClick = () => {
 // for (var i = 0, length = chores.length; i < length; i++){
@@ -192,8 +193,10 @@ if (document.getElementById("no").checked){
 //When user does NOT choose 2 favorite treats and clicks submit button- alert pops up?
 //When user chooses favorite treats- message text appears: "Great Choices Friend!" 
 
+//****************CODE FOR TREATS CHOICES- 3 CHECKBOXES:******************************/
 
 //****BUG: ALERT MESSAGE SHOWS UP NO MATTER WHAT *****
+//****DOES THIS REALLY MEET CRITERIA?? -- ASK IN CLASS FOR SUGGESTIONS... ****
 
  function treatChoiceClick () {
   let form_data = new
@@ -206,9 +209,7 @@ if (document.getElementById("no").checked){
 }
 
 
-
-
-//*****FIRST CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
+//*****FIRST TREATS CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
  // const treatChoiceClick = () => {
 
   //   if (document.getElementById("chocolate").checked){
