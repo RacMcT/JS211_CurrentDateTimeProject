@@ -137,7 +137,6 @@ console.log(selected);
 
 //*************** NEXT SECTION: 1 THING IS TRUE- RESPONSE SHOWS *******************/
 
-
 // Write a JavaScript program that runs when 1 of 2 things are true.-- section 4
 
 // if the user selects an option then it prints out a message
@@ -211,11 +210,8 @@ if (document.getElementById("no").checked){
 //*********** ALTERNATIVE SOLUTION TO PROMPT ******/
 
 //User enters two numbers into input, if they are both false a message appears
-//false 1 needs to be less than 5 to be false - ask for user to input opposite
-//false 2 needs to be larger than 1 to be false - ask for user to input opposite
-
-// let false1 = parseInt(document.getElementById("false1").value);
-// let false2 = parseInt(document.getElementById("false2").value);
+//false 1 needs to be greter than 5 to be false - ask for user to input opposite
+//false 2 needs to be less than 8 to be false - ask for user to input opposite
 
 function twoFalseClick () {
   let false1 = parseInt(document.getElementById("false1").value);
@@ -227,9 +223,6 @@ if((false1 >5) && (false2 <8)){
   alert("please enter falsy numbers (not meet criteria)")
 }
 }
-
-
-
 
 //*****FIRST TREATS CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
  // const treatChoiceClick = () => {
@@ -270,4 +263,4 @@ if((false1 >5) && (false2 <8)){
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
-//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN AFTER IT IS TOTALLY FUNCTIONAL AND DISPLAYS FOR THE USER TO GO THROUGH AND STYLE IT PRETTY
+//ASK IN CLASS: WHY DON'T WE DO THIS AS WE GO? WOULDN'T IT BE EASIER TO TROUBLESHOOT BUGS IF WE CAN PHYSICALLY SEE THEM AND THEN AFTER IT IS TOTALLY FUNCTIONAL AND DISPLAYS FOR THE USER TO GO THROUGH?
