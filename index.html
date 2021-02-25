@@ -19,19 +19,19 @@
     <br>
 
     <label for="number">Number to String</label>
-    <input type="number" id="numberForStringConversion">
+    <input type="number" id="numberForStringConversion" placeholder="number">
     <button onclick="numberToStringClick()">Convert Number to String</button>
     <div id="number-string"></div>
     <br>
 
    <label for="text">String to Number</label>
-    <input type="text" id="number">
+    <input type="text" id="number" placeholder="number">
     <button onclick="stringToNumberClick()">Convert String to Number</button> 
     <div id="string-number"></div>
     <br>
 
     <label for="text">Data Type Input</label>
-    <input type="text" id="dataTypes">
+    <input type="text" id="dataTypes" placeholder="enter text here">
     <button onclick="dataTypeIdentifyClick()">Idenitfy Data Type</button>
     <div id="data-type-display"></div>
     <br>
@@ -41,9 +41,9 @@
       <!-- Sum of 2 Input Numbers -->
 
     <label for="number">Number 1</label>
-    <input type="number" id="num1">
+    <input type="number" id="num1" placeholder="number">
     <label for="number">Number 2</label>
-    <input type="number" id="num2">
+    <input type="number" id="num2" placeholder="number">
     <button onclick="sumNumbersClick()">Sum of Numbers</button>
     <div id="sum-numbers"></div>
     <br>
@@ -53,7 +53,7 @@
   <!--  2 Criteria met to run function -->
   <h2>What's your name and what frog do you feel like today?</h2>
   <label for="text">Name</label>
-  <input type="text" id="name">
+  <input type="text" id="name" placeholder="name">
 
  <form name="frogForm" id="frogForm" class="frogForm">
     <label>
@@ -122,6 +122,15 @@
 <button onclick="treatChoiceClick()">Submit Treat Choices</button>
   <div id="treat-response"></div>
 </sectin>
+
+<!-- ALTERNATIVE CODE SOLUTION TO 2 FALSEY CRITERIA -->
+
+<label for="number">False Answer 1</label>
+    <input type="number" id="false1" placeholder="false answer">
+    <label for="number">False Answer 2</label>
+    <br>
+    <input type="number" id="false2" placeholder="false answer">
+    <button onclick="twoFalseClick()">Submit Two Falsy Answers</button>
   
 </main>
     

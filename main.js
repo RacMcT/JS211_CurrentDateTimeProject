@@ -208,6 +208,25 @@ if (document.getElementById("no").checked){
  }
 }
 
+//*********** ALTERNATIVE SOLUTION TO PROMPT ******/
+
+//User enters two numbers into input, if they are both false a message appears
+//false 1 needs to be less than 5 to be false - ask for user to input opposite
+//false 2 needs to be larger than 1 to be false - ask for user to input opposite
+
+let false1 = (document.getElementById("false1").value);
+let false2 = (document.getElementById("false2").value);
+
+function twoFalseClick () {
+if(false1 >= 5 && false2 > 1){
+  alert("thanks for entering two falsy numbers")
+}else{
+  alert("please enter falsy numbers (not meet criteria)")
+}
+}
+
+
+
 
 //*****FIRST TREATS CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
  // const treatChoiceClick = () => {
