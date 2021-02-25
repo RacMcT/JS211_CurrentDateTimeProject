@@ -221,13 +221,11 @@ function twoFalseClick () {
   let false1 = parseInt(document.getElementById("false1").value);
   let false2 = parseInt(document.getElementById("false2").value);
 
-if(false1 > 5 && false2 < 8){
+if((false1 >5) && (false2 <8)){
   alert("thanks for entering two falsy numbers")
 }else{
-  alert("please enter falsy numbers (not meet criteria)");
+  alert("please enter falsy numbers (not meet criteria)")
 }
-console.log(false1, false2);
-console.log(typeof false1);
 }
 
 
