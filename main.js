@@ -38,6 +38,35 @@ console.log(dataTypes);
 console.log(typeof dataTypes);
 document.getElementById("data-type-display").innerHTML += "<p>This is the data type you just input - check it out in the console log! </p>"
  }
+
+// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
+
+console.log(typeof true) // * Boolean
+console.log(typeof null) // * Null
+
+let doesNotDefine
+
+console.log(typeof null) // * Undefined
+console.log(typeof 4) // * Number
+console.log(typeof NaN) // * NaN
+console.log(typeof "hello") // * String
+
+function dataTypeClick() {
+  let typeInput = document.querySelector(".type-input").value
+
+  if(parseInt(typeInput) == Number) {
+    document.getElementById("data-type-display").innerHTML = "<p>This is a Number</p>";
+  } else if (typeInput.toLowerCase() == "true" || typeInput.toLowerCase() == "false"){
+    document.getElementById("data-type-display").innerHTML = "<p>This is a Boolian</p>";
+  } else if (parseInt(typeInput) == NaN) {
+    document.getElementById("data-type-display").innerHTML = "<p>This is not a number (aka NaN) or Null</p>";
+  } else if (typeInput == "") {
+    document.getElementById("data-type-display").innerHTML = "<p>This is undefined</p>";
+  } else {
+    document.getElementById("data-type-display").innerHTML = "<p>This is a string</p>";
+  }
+}
+
   
 //*********************************/
 //START THIS SECTION TUESDAY - FEB 22ND 
@@ -160,52 +189,10 @@ if (document.getElementById("no").checked){
   }
 }
 
-//************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
-// const choreStatusClick = () => {
-//   if (chores.checked == true) {
-//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
-    
-//   } else {
-//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
-    
-//   }
-// }
-
-//**********************SECOND ATTEMPT- TRIED TO USE FOR LOOP -- KINDA WORKED **************
-// let chores = document.getElementsByName('chore');
-// const choreStatusClick = () => {
-// for (var i = 0, length = chores.length; i < length; i++){
-//   if (chores[i].value =="yes"){
-//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
-//   }else if (chores[i].value =="no"){
-//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
-//   } 
-//   //break; - when it is incorporated then it just does first response... when not there it gives both... ?
-
-//   }
-//  }
 
 //*************** NEXT SECTION: 2 THING ARE FALSE- RESPONSE SHOWS-- ALERT MESSAGE? *******************/
 
 // Write a JavaScript program that runs when both things are not true.  -- section 5
-
-//When user does NOT choose 2 favorite treats and clicks submit button- alert pops up?
-//When user chooses favorite treats- message text appears: "Great Choices Friend!" 
-
-//****************CODE FOR TREATS CHOICES- 3 CHECKBOXES:******************************/
-
-//****BUG: ALERT MESSAGE SHOWS UP NO MATTER WHAT *****
-//****DOES THIS REALLY MEET CRITERIA?? -- ASK IN CLASS FOR SUGGESTIONS... ****
-
- function treatChoiceClick () {
-  let form_data = new
-  FormData(document.getElementById("treatsForm"));
-  if(!form_data.getAll("treat")<2){
-    alert ("please select 2 treat flavors")
- }else {
-  document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
- }
-}
 
 //*********** ALTERNATIVE SOLUTION TO PROMPT ******/
 
@@ -223,6 +210,28 @@ if((false1 >5) && (false2 <8)){
   alert("please enter falsy numbers (not meet criteria)")
 }
 }
+
+/*************** NEXT SECTION: 2 THING ARE FALSE- RESPONSE SHOWS-- ALERT MESSAGE? *******************/
+
+// Write a JavaScript program that runs when both things are not true.  -- section 5
+
+//When user does NOT choose 2 favorite treats and clicks submit button- alert pops up?
+//When user chooses favorite treats- message text appears: "Great Choices Friend!" 
+
+//****************CODE FOR TREATS CHOICES- 3 CHECKBOXES: ABANDONED FOR ASSIGNMENT- WILL TRY AGAIN AT A LATER DATE****************/
+
+//****BUG: ALERT MESSAGE SHOWS UP NO MATTER WHAT *****
+//****DOES THIS REALLY MEET CRITERIA?? -- ASK IN CLASS FOR SUGGESTIONS... ****
+
+//  function treatChoiceClick () {
+//   let form_data = new
+//   FormData(document.getElementById("treatsForm"));
+//   if(!form_data.getAll("treat")<2){
+//     alert ("please select 2 treat flavors")
+//  }else {
+//   document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!";
+//  }
+// }
 
 //*****FIRST TREATS CODE ATTEMPT- LONG AND DIDN'T REALLY VALIDATE FOR 2 CHOICES *************/
  // const treatChoiceClick = () => {
@@ -250,6 +259,33 @@ if((false1 >5) && (false2 <8)){
   //   document.getElementById("treat-response").innerHTML += "<p> Great Choices Friend!"
   // }
   //  }
+
+
+  //************* FIRST ATTEMPT FOR CHORES RADIO BUTTON RESPONSES -- ONLY 1/2 WORKED********
+// const choreStatusClick = () => {
+//   if (chores.checked == true) {
+//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
+    
+//   } else {
+//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+    
+//   }
+// }
+
+//**********************SECOND ATTEMPT- TRIED TO USE FOR LOOP -- KINDA WORKED **************
+// let chores = document.getElementsByName('chore');
+// const choreStatusClick = () => {
+// for (var i = 0, length = chores.length; i < length; i++){
+//   if (chores[i].value =="yes"){
+//     document.getElementById("child-allowance").innerHTML += "<p> Good Job, you now have $2.00";
+//   }else if (chores[i].value =="no"){
+//     document.getElementById("child-allowance").innerHTML += "<p> Please finish up!";
+//   } 
+//   //break; - when it is incorporated then it just does first response... when not there it gives both... ?
+
+//   }
+//  }
+
   
 // ***************************
 //         PART TWO
